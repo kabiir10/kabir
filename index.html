@@ -7,19 +7,73 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Добро пожаловать на мой сайт!</h1>
-        <p>Я ученик айти ран. Создаю красивые и удобные сайты.</p>
-        <a href="#contact" class="btn">Связаться со мной</a>
-      </header>
-    
-      <section id="contact">
-        <h2>Контакты</h2>
-        <p>Email: example@email.com</p>
-      </section>
-    
-      <footer>
-        <p>© 2025 Мой сайт. Все права защищены.</p>
-      </footer>
+    <!-- Навигация -->
+    <nav>
+        <div class="container">
+            <h1 class="logo">МойСайт</h1>
+            <ul class="nav-links">
+                <li><a href="#hero">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Обложка -->
+    <header id="hero">
+        <div class="hero-content">
+            <h2>Добро пожаловать!</h2>
+            <p>Современный и стильный сайт для экзамена</p>
+            <a href="#services" class="btn">Наши услуги</a>
+        </div>
+    </header>
+
+    <!-- О нас -->
+    <section id="about">
+        <div class="container">
+            <h2>О нас</h2>
+            <p>Мы создаём красивые, адаптивные сайты, которые работают на любом устройстве. Используем современные технологии HTML5 и CSS3.</p>
+        </div>
+    </section>
+
+    <!-- Услуги -->
+    <section id="services">
+        <div class="container">
+            <h2>Наши услуги</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Веб-дизайн</h3>
+                    <p>Современный дизайн сайтов и интерфейсов.</p>
+                </div>
+                <div class="card">
+                    <h3>Разработка</h3>
+                    <p>HTML, CSS, адаптивная вёрстка и функциональность.</p>
+                </div>
+                <div class="card">
+                    <h3>Поддержка</h3>
+                    <p>Сопровождение и обновление сайтов.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact">
+        <div class="container">
+            <h2>Связаться с нами</h2>
+            <form>
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Сообщение" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <p>&copy; 2025 МойСайт. Все права защищены.</p>
+    </footer>
 </body>
 </html>
